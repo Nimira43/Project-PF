@@ -8,6 +8,8 @@ class Game:
     self.display_surface = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
     pygame.display.set_caption('Eezer 2')
 
+    self.tmx_maps = { 0: load_pygame('')}
+
     self.current_stage = Level()
 
   def run(self):
